@@ -1,0 +1,19 @@
+---
+// One app screenshot that follows the reader's theme: `<name>-light.png` and `<name>-dark.png` in src/assets/screenshots.
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+
+interface Props {
+	name: string;
+	alt: string;
+}
+
+const shots = import.meta.glob<{ default: ImageMetadata }>('../assets/screenshots/*.png', { eager: true });
+const { name, alt } = Astro.props;
+const light = shots[`../assets/screenshots/${name}-light.png`]?.default;
+const dark = shots[`../assets/screenshots/${name}-dark.png`]?.default;
+if (!light || !dark) throw new Error(`Missing screenshot pair: ${name}`);
+---
+
+<Image src={light} alt={alt} class="screenshot dark:sl-hidden" />
+<Image src={dark} alt={alt} class="screenshot light:sl-hidden" />

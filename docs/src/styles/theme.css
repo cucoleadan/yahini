@@ -1,0 +1,28 @@
+/* Yahini's burnt orange (the app's brand colour) as Starlight's accent, in both themes. */
+:root {
+	--sl-color-accent-low: #3b1a0a;
+	--sl-color-accent: #c84b12;
+	--sl-color-accent-high: #fdc9a8;
+}
+
+:root[data-theme='light'] {
+	--sl-color-accent-low: #fde3d1;
+	--sl-color-accent: #c2410c;
+	--sl-color-accent-high: #7c2d12;
+}
+
+/* Screenshots sit on the page like the app's square, bordered panels. */
+.screenshot {
+	border: 1px solid var(--sl-color-gray-5);
+}
+
+/* Phone screenshots side by side, at phone size. */
+.phones {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+.phones .screenshot {
+	width: 16rem;
+	margin-top: 0;
+}

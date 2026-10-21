@@ -1,0 +1,107 @@
+---
+title: Create your first project
+description: Add your website and competitors, check how Yahini reads your business and run keyword research.
+---
+
+import { Steps } from '@astrojs/starlight/components';
+import Screenshot from '../../../components/Screenshot.astro';
+
+A project is one website you research and write for. Creating one takes a couple of minutes. Then Yahini builds your keyword plan in the background.
+
+## Before you start
+
+You need:
+
+- Your website's address. Each address is its own project, so `example.com/en` and `example.com/fr` can be separate projects.
+- **At least three competitors**, up to five. These are sites that compete for your audience in search, not necessarily your business rivals.
+- Optionally, up to five topics and a description of your audience.
+
+## Fill in the project
+
+Choose **New project** in the sidebar. The form has three steps. Each one is checked before the next opens, and you can go back to edit a finished step.
+
+<Steps>
+
+1. **Project**
+
+   - **Website** (required): your domain, such as `yourwebsite.com`. Yahini adds `https://` for you.
+   - **Project name** (optional): defaults to the website address.
+   - **Country** and **Language**: the market you're targeting. The language list changes with the country.
+
+   <Screenshot name="new-project-1" alt="Step 1: website, project name, country and language" />
+
+2. **Competitors**
+
+   Add three to five competitor domains. You can't list your own website or the same competitor twice.
+
+   <Screenshot name="new-project-2" alt="Step 2: three to five competitors" />
+
+3. **Topics and audience** (optional)
+
+   - **Topics**: up to five subjects you want to rank for, separated by commas, such as `email marketing, newsletter growth, automation`.
+   - **Audience**: who you're writing for, such as `founders of small online businesses`.
+
+   These focus the keyword research. You can skip this step and add them later from the project dashboard.
+
+   <Screenshot name="new-project-3" alt="Step 3: topics and audience" />
+
+</Steps>
+
+Choose **Review project**, check the details and choose **Create project**. Yahini checks that your website can be read publicly, creates the project and makes you the admin of its team.
+
+<Screenshot name="new-project-review" alt="Review project before creating it" />
+
+:::note
+Creating a project is free. Your plan sets how many projects you can own. Archived projects and projects shared with you don't count. See [Plans and billing](/account/plans-and-billing/).
+:::
+
+## Step 1: Check the basics
+
+Yahini first reads your website and writes a short summary of what the business does. Your keyword research starts from this summary, so check it before anything is charged.
+
+<Screenshot name="generation-reading" alt="Yahini reading the website" />
+
+<Screenshot name="generation-summary" alt="Does this describe your business? The summary with Edit, Not quite and Looks right" />
+
+- **Looks right · 20 credits**: approves the summary and starts keyword research.
+- **Not quite**: tell Yahini what it got wrong, for example "we're a CRM for dental clinics, not a clinic". It reads the site again, searches the web for your company and uses your note. This is free, with a limited number of tries.
+- **Edit**: write or correct the summary yourself.
+
+<Screenshot name="generation-not-quite" alt="Not quite: a note telling Yahini what it got wrong" />
+
+If Yahini couldn't read your website, it asks you to describe the business, or to write the summary yourself.
+
+## Step 2: Keyword research
+
+The run goes through these steps:
+
+1. Reading website
+2. Building brand intelligence
+3. Generating keywords
+4. Finding related keywords
+5. Finding ranked keywords (paid plans)
+6. Checking relevance
+7. Grouping keywords
+8. Calculating difficulty
+
+You can leave the page while it runs. Yahini keeps working and emails you when it's done. Meanwhile, the page shows what it has found: the website summary, the brand profile and the newest keywords.
+
+<Screenshot name="generation-running" alt="The keyword run in progress, with the website summary, brand and newest keywords" />
+
+:::tip[Connect Search Console while you wait]
+If your site is in Google Search Console, connect it from this page. Yahini can then add the searches you already appear for, and your dashboard shows clicks and rankings. It's free. See [Search Console](/features-functionality/search-console/).
+:::
+
+When the run finishes, choose **View keywords**.
+
+<Screenshot name="generation-done" alt="Your keyword plan is ready" />
+
+### If the run fails
+
+The credits are refunded and retrying is free. Choose **Retry generation** on the project.
+
+<Screenshot name="generation-failed" alt="A run that stopped, with Retry generation" />
+
+## Next step
+
+[Review your keywords](/features-functionality/keyword-research/) and add the best ones to your workbook.

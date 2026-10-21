@@ -1,0 +1,15 @@
+{
+	"$schema": "./node_modules/wrangler/config-schema.json",
+	// A static site: Workers serves the built files from ./dist, no Worker code.
+	"name": "yahini-docs",
+	"compatibility_date": "2026-10-12",
+	"routes": [{ "pattern": "documentation.yahini.io", "custom_domain": true }],
+	"workers_dev": false,
+	"assets": {
+		"directory": "./dist",
+		"not_found_handling": "404-page"
+	},
+	"observability": {
+		"enabled": true
+	}
+}
