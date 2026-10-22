@@ -4,6 +4,8 @@
 
 [Website](https://yahini.io) · [Documentation](https://documentation.yahini.io)
 
+https://github.com/user-attachments/assets/306d3a70-3cf0-40db-bd75-cd3de387de27
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/src/assets/screenshots/home-dark.png">
   <img alt="Home: overdue and upcoming tasks, running agents and project progress" src="docs/src/assets/screenshots/home-light.png">
